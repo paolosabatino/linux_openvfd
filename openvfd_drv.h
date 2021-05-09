@@ -54,17 +54,18 @@
 
 #ifdef MODULE
 
-#define MOD_NAME_CLK       "openvfd_gpio_clk"
-#define MOD_NAME_DAT       "openvfd_gpio_dat"
-#define MOD_NAME_STB       "openvfd_gpio_stb"
-#define MOD_NAME_GPIO0     "openvfd_gpio0"
-#define MOD_NAME_GPIO1     "openvfd_gpio1"
-#define MOD_NAME_GPIO2     "openvfd_gpio2"
-#define MOD_NAME_GPIO3     "openvfd_gpio3"
-#define MOD_NAME_PROT      "openvfd_gpio_protocol"
-#define MOD_NAME_CHARS     "openvfd_chars"
-#define MOD_NAME_DOTS      "openvfd_dot_bits"
-#define MOD_NAME_TYPE      "openvfd_display_type"
+#define MOD_NAME_CLK       "gpio-clk"
+#define MOD_NAME_DAT       "gpio-dat"
+#define MOD_NAME_STB       "gpio-stb"
+#define MOD_NAME_GPIO0     "gpio0"
+#define MOD_NAME_GPIO1     "gpio1"
+#define MOD_NAME_GPIO2     "gpio2"
+#define MOD_NAME_GPIO3     "gpio3"
+#define MOD_NAME_PROT      "gpio-protocol"
+#define MOD_NAME_CHARS     "openvfd,chars"
+#define MOD_NAME_DOTS      "openvfd,dot-bits"
+#define MOD_NAME_TYPE      "openvfd,display-type"
+#define MOD_NAME_TRANSPOSED "openvfd,display-transposed"
 
 #endif
 
@@ -132,8 +133,8 @@ struct vfd_dev {
 	int key_respond_status;
 	int Keyboard_diskstatus;
 	u_int8 KeyPressCnt;
-	u_int8  key_fg;
-	u_int8  key_val;
+	u_int8 key_fg;
+	u_int8 key_val;
 	u_int8 status_led_mask;		/* Indicators mask */
 };
 
