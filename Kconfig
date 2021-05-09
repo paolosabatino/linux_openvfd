@@ -1,0 +1,5 @@
+config LEDS_FD628
+        tristate "FD628 and clones LED support"
+        help
+          This options enabled FD628 driver and clones
+
